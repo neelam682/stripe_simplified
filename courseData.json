@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Quantum Computing Basics",
+        "description": "Learn the fundamentals of quantum mechanics and qubits, and explore how quantum circuits work.",
+        "imageUrl": "http://localhost:3000/courses/QuantumComputing.jpg",
+        "price": 49.0
+    },
+    {
+        "title": "Python Programming for Beginners",
+        "description": "Start coding in Python with hands-on exercises, data structures, and practical mini-projects.",
+        "imageUrl": "http://localhost:3000/courses/python.jpg",
+        "price": 29.0
+    },
+    {
+        "title": "Introduction to Machine Learning",
+        "description": "Get started with supervised and unsupervised learning, and build simple ML models from scratch.",
+        "imageUrl": "http://localhost:3000/courses/Ml.jpg",
+        "price": 59.0
+    },
+    {
+        "title": "Web Development with React",
+        "description": "Learn modern React, components, hooks, and how to build a small web application from scratch.",
+        "imageUrl": "http://localhost:3000/courses/webdev1.gif",
+        "price": 45.0
+    },
+    {
+        "title": "Cryptography Essentials",
+        "description": "Explore classical and modern cryptography, including ciphers, hashing, and public-key encryption.",
+        "imageUrl": "http://localhost:3000/courses/cryptography.jpg",
+        "price": 55.0
+    }
+]

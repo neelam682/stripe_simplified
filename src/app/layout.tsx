@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ConvexClientProvider } from "../components/providers/ConvexClientProvider";
+import Navbar from "../components/Navbar"
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +29,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} relative antialiased`}
       >
-        {children}
+        <ConvexClientProvider>
+          <div
+            className="absolute inset-0 -z-10 h-full w-full bg-white
+              bg-[linear-gradient(to right,#f0f0f0 1px,transparent 1px),linear-gradient(to bottom,#f0f0f0 1px,transparent 1px)]
+              bg-[length:6rem_4rem]"
+          >
+            <div className="absolute inset-0 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]"></div>
+          </div>
+          <Navbar />
+          {children}
+          <Toaster />
+        </ConvexClientProvider>
       </body>
     </html>
   );
