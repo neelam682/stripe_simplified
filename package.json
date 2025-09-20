@@ -33,7 +33,6 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@next/swc-win32-x64-msvc": "^14.2.32",
     "@react-email/components": "^0.5.3",
     "@react-email/preview-server": "^4.2.11",
     "@types/node": "^20",
